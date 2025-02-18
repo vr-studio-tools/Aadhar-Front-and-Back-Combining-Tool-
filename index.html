@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Combine Aadhar front and back photos into a single A4 page. Download the combined image easily.">
+  <meta name="keywords" content="Aadhar, Aadhar front and back, Aadhar combining tool, Aadhar download, Vr">
+  <meta name="author" content="Vr">
+  <title>Aadhar Front and Back Combining Tool - Vr</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <img src="logo.png" alt="Logo" width="50" height="50"> <!-- Replace with your logo -->
+      <h1>Aadhar Combining Tool</h1>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <div class="container">
+    <h2>Upload Front and Back Photos</h2>
+    <input type="file" id="frontPhoto" accept="image/*" />
+    <input type="file" id="backPhoto" accept="image/*" />
+    <button id="downloadBtn" disabled>Download A4 Page</button>
+    <div class="a4-container">
+      <div class="a4-page">
+        <img id="frontPreview" src="#" alt="Front Photo" />
+        <img id="backPreview" src="#" alt="Back Photo" />
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Aadhar Combining Tool. All rights reserved. | Designed by Vr</p>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

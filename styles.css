@@ -1,0 +1,107 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #fff7c2, #ffd699); /* Light yellow + light orange gradient */
+  color: #333;
+}
+
+/* Header */
+header {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  margin-right: 10px;
+}
+
+/* Main Container */
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+input[type="file"] {
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: #fff;
+}
+
+/* A4 Page Container */
+.a4-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.a4-page {
+  width: 210mm; /* A4 width */
+  height: 297mm; /* A4 height */
+  background-color: white;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: row; /* Side by side */
+  align-items: top;
+  justify-content: space-around; /* Space between images */
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.a4-page img {
+  border: 1px solid #ccc;
+  max-width: 43%; /* Each image takes 48% of the A4 width */
+  max-height: 19%; /* Full height of the A4 page */
+  object-fit: contain; /* Maintain aspect ratio */
+}
+
+/* Download Button */
+#downloadBtn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#downloadBtn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+#downloadBtn:hover:not(:disabled) {
+  background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.8);
+  margin-top: 20px;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+  margin: 0;
+  font-size: 14px;
+  color: #555;
+}
